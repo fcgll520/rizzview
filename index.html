@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGKJ03QHK9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BGKJ03QHK9');
+  </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>RizzView | Video Live Wallpaper for Windows</title>
+    <meta id="meta-description" name="description" content="Set local or online videos as your live desktop wallpaper. Multi-language, theme switch, audio modes, auto rotation, and favorites." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" data-i18n-aria-label="brand.ariaLabel" aria-label="锐致桌面">
+          <span class="brand__mark" aria-hidden="true">RV</span>
+          <span class="brand__text">
+            <span class="brand__name" data-i18n="brand.name">RizzView</span>
+            <span class="brand__tag" data-i18n="brand.tag">视频桌面壁纸</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a class="nav__link" href="#features" data-i18n="nav.features">功能</a>
+          <a class="nav__link" href="#how" data-i18n="nav.how">使用方式</a>
+          <a class="nav__link" href="#faq" data-i18n="nav.faq">常见问题</a>
+          <!-- <a class="nav__link" href="https://discord.com/invite/dyXAJbuVpY">Discord</a> -->
+          <a class="nav__link" href="https://www.phoenysoft.com/contact.html">Contact Us</a>
+        </nav>
+        <div class="topbar__actions">
+          <!-- <label class="srOnly" for="langSelect" data-i18n="lang.label">语言</label> -->
+          <!-- <select id="langSelect" class="langSelect" data-lang-select data-i18n-aria-label="lang.ariaLabel" aria-label="Language">
+            <option value="zh-CN">中文</option>
+            <option value="en-US" selected>English</option>
+            <option value="ja-JP">日本語</option>
+          </select> -->
+          <!-- <button class="button button--ghost" type="button" data-theme-toggle data-i18n="action.theme">
+            切换主题
+          </button> -->
+          <a class="button button--primary" href="https://www.phoenysoft.com/software/rizzview_setup.exe" data-i18n="action.downloadNow">立即下载</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="kicker" data-i18n="hero.kicker">Windows · 本地/网络视频 · 轻量稳定</p>
+            <h1 class="hero__title" data-i18n="hero.title">把视频变成你的桌面</h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
+              一键将本地视频或网络视频设置为动态桌面壁纸。支持多语言、主题切换、音频模式、自动更换与收藏，让桌面更有氛围感。
+            </p>
+            <div class="hero__cta">
+              <a class="button button--primary button--lg" href="https://www.phoenysoft.com/software/rizzview_setup.exe" data-i18n="hero.ctaPrimary">下载 Windows 版</a>
+              <a class="button button--ghost button--lg" href="#features" data-i18n="hero.ctaSecondary">查看功能</a>
+            </div>
+            <ul class="hero__bullets" role="list">
+              <li data-i18n="hero.bullet1">支持本地视频：mp4/avi/wmv/mkv</li>
+              <li data-i18n="hero.bullet2">支持网络视频：直接粘贴 URL 或在线搜索</li>
+              <li data-i18n="hero.bullet3">隐藏桌面为可选项：默认不隐藏</li>
+            </ul>
+          </div>
+          <div class="hero__visual" data-i18n-aria-label="hero.previewAria" aria-label="产品预览">
+            <div class="mock">
+              <div class="mock__top">
+                <span class="mock__dot"></span>
+                <span class="mock__dot"></span>
+                <span class="mock__dot"></span>
+                <span class="mock__title" data-i18n="mock.title">锐致桌面 · 预览</span>
+              </div>
+              <div class="mock__body">
+                <div class="mock__card mock__card--left">
+                  <div class="mock__cardTitle" data-i18n="mock.localTitle">本地视频</div>
+                  <div class="mock__cardText" data-i18n="mock.localText">拖入文件夹，自动加载列表</div>
+                  <div class="mock__pill" data-i18n="mock.localPill">设为动态壁纸</div>
+                </div>
+                <div class="mock__card mock__card--right">
+                  <div class="mock__cardTitle" data-i18n="mock.onlineTitle">网络视频</div>
+                  <div class="mock__cardText" data-i18n="mock.onlineText">搜索关键词或粘贴链接</div>
+                  <div class="mock__pill" data-i18n="mock.onlinePill">一键播放</div>
+                </div>
+                <div class="mock__strip">
+                  <div class="mock__stripBar"></div>
+                  <div class="mock__stripBar"></div>
+                  <div class="mock__stripBar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- <p class="hero__note" data-i18n="hero.note">提示：此页为静态产品页示例，可直接部署到任意静态站点。</p> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" data-i18n="features.title">核心功能</h2>
+            <p class="section__desc" data-i18n="features.desc">围绕“快速设置、稳定播放、可控体验”设计。</p>
+          </div>
+          <div class="grid grid--3">
+            <article class="card">
+              <h3 class="card__title" data-i18n="features.local.title">本地视频动态壁纸</h3>
+              <p class="card__text" data-i18n="features.local.text">选择默认视频路径后自动扫描，列表中一键设置到桌面。</p>
+              <ul class="card__list" role="list">
+                <li data-i18n="features.local.li1">本地路径/文件 URI 都可用</li>
+                <li data-i18n="features.local.li2">播放失败自动重试与超时兜底</li>
+                <li data-i18n="features.local.li3">退出自动清理不残留窗口</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3 class="card__title" data-i18n="features.online.title">网络视频搜索与设置</h3>
+              <p class="card__text" data-i18n="features.online.text">支持在线搜索与链接播放，适合快速换风格。</p>
+              <ul class="card__list" role="list">
+                <li data-i18n="features.online.li1">可选择不同分辨率源</li>
+                <li data-i18n="features.online.li2">支持下载保存到本地</li>
+                <li data-i18n="features.online.li3">失败提示明确，易排查</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3 class="card__title" data-i18n="features.desktop.title">可控的桌面显示</h3>
+              <p class="card__text" data-i18n="features.desktop.text">隐藏桌面是可选项：默认不生效，只有手动开启才会隐藏。</p>
+              <ul class="card__list" role="list">
+                <li data-i18n="features.desktop.li1">播放时按设置决定是否隐藏</li>
+                <li data-i18n="features.desktop.li2">关闭选项会尝试恢复桌面</li>
+                <li data-i18n="features.desktop.li3">不影响普通静态壁纸</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="grid grid--2 mt">
+            <article class="card card--muted">
+              <h3 class="card__title" data-i18n="features.ui.title">主题与语言</h3>
+              <p class="card__text" data-i18n="features.ui.text">内置多主题与多语言界面，适配不同使用习惯。</p>
+              <div class="pillRow">
+                <span class="pill">Light</span>
+                <span class="pill">Dark</span>
+                <span class="pill">Blue</span>
+                <span class="pill">简体中文</span>
+                <span class="pill">English</span>
+                <span class="pill">日本語</span>
+              </div>
+            </article>
+            <article class="card card--muted">
+              <h3 class="card__title" data-i18n="features.auto.title">自动更换与收藏</h3>
+              <p class="card__text" data-i18n="features.auto.text">支持定时自动切换壁纸，收藏常用资源快速回到喜欢的风格。</p>
+              <div class="pillRow">
+                <span class="pill" data-i18n="features.auto.pill1">30 分钟</span>
+                <span class="pill" data-i18n="features.auto.pill2">1 小时</span>
+                <span class="pill" data-i18n="features.auto.pill3">2 小时</span>
+                <span class="pill" data-i18n="features.auto.pill4">6 小时</span>
+                <span class="pill" data-i18n="features.auto.pill5">12 小时</span>
+                <span class="pill" data-i18n="features.auto.pill6">1 天</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" data-i18n="how.title">使用方式</h2>
+            <p class="section__desc" data-i18n="how.desc">三步完成设置，桌面立刻动起来。</p>
+          </div>
+          <ol class="steps" role="list">
+            <li class="step">
+              <div class="step__num">1</div>
+              <div class="step__body">
+                <div class="step__title" data-i18n="how.step1.title">选择资源</div>
+                <div class="step__text" data-i18n="how.step1.text">从本地视频列表选择，或在网络视频中搜索/粘贴链接。</div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__num">2</div>
+              <div class="step__body">
+                <div class="step__title" data-i18n="how.step2.title">一键设置桌面</div>
+                <div class="step__text" data-i18n="how.step2.text">点击“设置桌面”，播放器会在后台初始化并开始播放。</div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__num">3</div>
+              <div class="step__body">
+                <div class="step__title" data-i18n="how.step3.title">按需调整</div>
+                <div class="step__text" data-i18n="how.step3.text">在设置页调整音频模式、自动更换、隐藏桌面等选项。</div>
+              </div>
+            </li>
+          </ol>
+
+          <div class="callout">
+            <div class="callout__title" data-i18n="how.req.title">系统要求</div>
+            <div class="callout__text" data-i18n="how.req.text">Windows 10/11 · 建议独显/核显均可 · 视频较大时建议放在 SSD。</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" data-i18n="faq.title">常见问题</h2>
+            <p class="section__desc" data-i18n="faq.desc">这里覆盖了最常见的使用疑问。</p>
+          </div>
+
+          <div class="faq" data-accordion>
+            <details class="faq__item">
+              <summary class="faq__q" data-i18n="faq.q1">隐藏桌面默认会生效吗？</summary>
+              <div class="faq__a" data-i18n="faq.a1">不会。隐藏桌面为独立设置项，默认关闭。只有在设置里勾选后才会在播放动态壁纸时生效。</div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q" data-i18n="faq.q2">本地视频为什么提示找不到？</summary>
+              <div class="faq__a" data-i18n="faq.a2">请确认路径是否存在。若是 file:/// 形式的路径，也会自动转换校验。建议将视频放到“默认视频路径”目录中。</div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q" data-i18n="faq.q3">退出后桌面/窗口残留怎么办？</summary>
+              <div class="faq__a" data-i18n="faq.a3">程序退出会尝试停止播放、恢复桌面并关闭子窗口。若系统环境异常，也会有兜底退出机制。</div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q" data-i18n="faq.q4">是否会上传我的文件？</summary>
+              <div class="faq__a" data-i18n="faq.a4">本地视频不会上传。网络视频播放取决于你选择的在线源，仅发生必要的网络请求。</div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand" data-i18n="footer.brand">锐致桌面</div>
+          <div class="footer__meta" data-i18n="footer.meta">视频桌面壁纸软件</div>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="#top" data-i18n="footer.top">回到顶部</a>
+          <a class="footer__link" href="#features" data-i18n="footer.features">功能</a>
+          <a class="footer__link" href="https://www.phoenysoft.com/software/rizzview_setup.exe" data-i18n="footer.download">下载</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+
