@@ -264,6 +264,15 @@ a {
   gap: 12px;
 }
 
+.hero__preview {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 26px 60px var(--shadow);
+}
+
 .hero__note {
   margin: 0;
   font-size: 12px;
