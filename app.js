@@ -310,6 +310,104 @@ const translations = {
   }
 };
 
+Object.assign(translations, {
+  "zh-CN": {
+    ...translations["zh-CN"],
+    "lang.label": "语言",
+    "lang.ariaLabel": "语言",
+    "footer.home": "首页",
+    "footer.about": "关于我们",
+    "footer.privacy": "隐私政策",
+    "footer.terms": "服务条款"
+  },
+  "en-US": {
+    ...translations["en-US"],
+    "footer.home": "Home",
+    "footer.about": "About Us",
+    "footer.privacy": "Privacy",
+    "footer.terms": "Terms"
+  },
+  "ja-JP": {
+    ...translations["ja-JP"],
+    "lang.label": "言語",
+    "lang.ariaLabel": "言語",
+    "footer.home": "ホーム",
+    "footer.about": "会社情報",
+    "footer.privacy": "プライバシー",
+    "footer.terms": "利用規約"
+  },
+  "zh-TW": {
+    "page.title": "RizzView | Windows 動態桌布",
+    "page.description": "將本機或線上影片設為動態桌布。支援多語言、主題切換、音訊模式、自動輪播與收藏。",
+    "lang.label": "語言",
+    "lang.ariaLabel": "語言",
+    "footer.brand": "銳致桌面",
+    "footer.meta": "影片動態桌布軟體",
+    "footer.features": "功能",
+    "footer.download": "下載",
+    "footer.home": "首頁",
+    "footer.about": "關於我們",
+    "footer.privacy": "隱私權政策",
+    "footer.terms": "服務條款"
+  },
+  "de-DE": {
+    "page.title": "RizzView | Video-Live-Wallpaper für Windows",
+    "page.description": "Setze lokale oder Online-Videos als animierten Desktop-Hintergrund. Mit Mehrsprachigkeit, Themen, Audio-Modi, Auto-Wechsel und Favoriten.",
+    "lang.label": "Sprache",
+    "lang.ariaLabel": "Sprache",
+    "footer.brand": "RizzView",
+    "footer.meta": "Video-Live-Wallpaper",
+    "footer.features": "Funktionen",
+    "footer.download": "Download",
+    "footer.home": "Startseite",
+    "footer.about": "Über uns",
+    "footer.privacy": "Datenschutz",
+    "footer.terms": "Nutzungsbedingungen"
+  },
+  "fr-FR": {
+    "page.title": "RizzView | Fond d'écran vidéo animé pour Windows",
+    "page.description": "Définissez des vidéos locales ou en ligne comme fond d'écran animé. Interface multilingue, thèmes, modes audio, rotation auto et favoris.",
+    "lang.label": "Langue",
+    "lang.ariaLabel": "Langue",
+    "footer.brand": "RizzView",
+    "footer.meta": "Fond d'écran vidéo animé",
+    "footer.features": "Fonctionnalités",
+    "footer.download": "Télécharger",
+    "footer.home": "Accueil",
+    "footer.about": "À propos",
+    "footer.privacy": "Confidentialité",
+    "footer.terms": "Conditions"
+  },
+  "pt-PT": {
+    "page.title": "RizzView | Papel de parede em vídeo para Windows",
+    "page.description": "Defina vídeos locais ou online como papel de parede animado. Suporte multilíngue, temas, modos de áudio, rotação automática e favoritos.",
+    "lang.label": "Idioma",
+    "lang.ariaLabel": "Idioma",
+    "footer.brand": "RizzView",
+    "footer.meta": "Papel de parede em vídeo",
+    "footer.features": "Funcionalidades",
+    "footer.download": "Transferir",
+    "footer.home": "Início",
+    "footer.about": "Sobre nós",
+    "footer.privacy": "Privacidade",
+    "footer.terms": "Termos"
+  },
+  "es-ES": {
+    "page.title": "RizzView | Fondo de pantalla en video para Windows",
+    "page.description": "Establece videos locales u online como fondo de pantalla animado. Soporte multilingüe, temas, modos de audio, rotación automática y favoritos.",
+    "lang.label": "Idioma",
+    "lang.ariaLabel": "Idioma",
+    "footer.brand": "RizzView",
+    "footer.meta": "Fondo de pantalla en video",
+    "footer.features": "Funciones",
+    "footer.download": "Descargar",
+    "footer.home": "Inicio",
+    "footer.about": "Sobre nosotros",
+    "footer.privacy": "Privacidad",
+    "footer.terms": "Términos"
+  }
+});
+
 let currentLang = "zh-CN";
 
 function getStoredLang() {
@@ -329,8 +427,13 @@ function storeLang(lang) {
 function normalizeLang(lang) {
   if (!lang) return "zh-CN";
   const lower = String(lang).toLowerCase();
+  if (lower === "zh-tw" || lower.startsWith("zh-hk") || lower.startsWith("zh-mo")) return "zh-TW";
   if (lower.startsWith("zh")) return "zh-CN";
+  if (lower.startsWith("de")) return "de-DE";
+  if (lower.startsWith("fr")) return "fr-FR";
   if (lower.startsWith("ja")) return "ja-JP";
+  if (lower.startsWith("pt")) return "pt-PT";
+  if (lower.startsWith("es")) return "es-ES";
   if (lower.startsWith("en")) return "en-US";
   return "zh-CN";
 }
@@ -342,9 +445,10 @@ function getInitialLang() {
 }
 
 function t(lang, key) {
-  const table = translations[lang] || translations["zh-CN"];
-  const fallback = translations["zh-CN"];
-  return table[key] ?? fallback[key] ?? key;
+  const table = translations[lang] || translations["en-US"];
+  const fallbackEn = translations["en-US"];
+  const fallbackZh = translations["zh-CN"];
+  return table[key] ?? fallbackEn[key] ?? fallbackZh[key] ?? key;
 }
 
 function applyI18n(lang) {

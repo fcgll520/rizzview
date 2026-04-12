@@ -74,6 +74,18 @@ a {
   text-decoration: none;
 }
 
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .container {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
@@ -669,6 +681,7 @@ a {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer__link {
@@ -682,9 +695,31 @@ a {
   background: var(--panel);
 }
 
+.footer__lang {
+  display: inline-flex;
+  align-items: center;
+}
+
+.langSelect {
+  border: 1px solid color-mix(in oklab, var(--primary), white 20%);
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--panel-strong), transparent 10%);
+  color: var(--text);
+  padding: 9px 36px 9px 12px;
+  font: inherit;
+  line-height: 1.2;
+  min-width: 160px;
+  cursor: pointer;
+}
+
+.langSelect option {
+  color: #111827;
+}
+
 .button:focus-visible,
 .nav__link:focus-visible,
 .footer__link:focus-visible,
+.langSelect:focus-visible,
 .faq__q:focus-visible {
   outline: 2px solid var(--ring);
   outline-offset: 3px;
