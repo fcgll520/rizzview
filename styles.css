@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f3f7ff;
   --bg-strong: #ffffff;
   --text: #0e1a2b;
@@ -804,3 +804,4 @@ code {
     min-width: 130px;
   }
 }
+
