@@ -7,7 +7,7 @@ const pageI18n = {
     metaDescription:
       "Set local or online videos as your live desktop wallpaper. Multi-language, theme switch, audio modes, auto rotation, and favorites.",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       '.brand__tag': "Video Live Wallpaper",
       '.nav__link[href="#features"]': "Features",
       '.nav__link[href="#scenes"]': "Scenarios",
@@ -92,7 +92,7 @@ const pageI18n = {
     metaDescription:
       "將本機或線上影片設為動態桌布。支援多語言、主題、音訊模式、自動輪播與收藏。",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       '.brand__tag': "視訊動態桌布",
       '.nav__link[href="#features"]': "功能亮點",
       '.nav__link[href="#scenes"]': "使用場景",
@@ -160,7 +160,7 @@ const pageI18n = {
     metaDescription:
       "Nutze lokale oder Online-Videos als Live-Desktop-Hintergrund. Mehrsprachig, mit Audiomodi, Auto-Wechsel und Favoriten.",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       ".brand__tag": "Video-Live-Wallpaper",
       '.nav__link[href="#features"]': "Funktionen",
       '.nav__link[href="#scenes"]': "Szenarien",
@@ -241,7 +241,7 @@ const pageI18n = {
     metaDescription:
       "Definissez des videos locales ou en ligne comme fond d'ecran anime. Multilingue, modes audio, rotation auto et favoris.",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       ".brand__tag": "Fond d'ecran video anime",
       '.nav__link[href="#features"]': "Fonctionnalites",
       '.nav__link[href="#scenes"]': "Scenarios",
@@ -321,7 +321,7 @@ const pageI18n = {
     metaDescription:
       "ローカル動画やオンライン動画をライブ壁紙に設定。多言語、音声モード、自動切替、お気に入りに対応。",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       ".brand__tag": "動画ライブ壁紙",
       '.nav__link[href="#features"]': "機能",
       '.nav__link[href="#scenes"]': "利用シーン",
@@ -401,7 +401,7 @@ const pageI18n = {
     metaDescription:
       "Use videos locais ou online como papel de parede animado. Multi-idioma, modos de audio, rotacao automatica e favoritos.",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       ".brand__tag": "Papel de parede em video",
       '.nav__link[href="#features"]': "Funcionalidades",
       '.nav__link[href="#scenes"]': "Cenarios",
@@ -482,7 +482,7 @@ const pageI18n = {
     metaDescription:
       "Usa videos locales u online como fondo animado. Multiidioma, modos de audio, rotacion automatica y favoritos.",
     one: {
-      '.brand[href="#top"]': "RizzView",
+      '.brand__name': "RizzView",
       ".brand__tag": "Fondo de pantalla en video",
       '.nav__link[href="#features"]': "Funciones",
       '.nav__link[href="#scenes"]': "Escenarios",
@@ -619,13 +619,12 @@ const coverageBase = {
     ],
     "#footerLangSelect option": [
       "English",
-      "Simplified Chinese",
-      "Traditional Chinese",
+      "繁體中文",
       "Deutsch",
-      "Francais",
-      "Japanese",
-      "Portugues",
-      "Espanol"
+      "Français",
+      "日本語",
+      "Português",
+      "Español"
     ]
   }
 };
@@ -681,7 +680,7 @@ const coverageZhTW = {
       "本機影片不會上傳，線上播放僅發送必要請求",
       "適配常見桌面環境，隱藏桌面由使用者自行控制"
     ],
-    "#footerLangSelect option": ["English", "簡體中文", "繁體中文", "Deutsch", "Français", "日本語", "Português", "Español"]
+    "#footerLangSelect option": ["English", "繁體中文", "Deutsch", "Français", "日本語", "Português", "Español"]
   }
 };
 
@@ -795,7 +794,232 @@ const coverageZhCN = {
       "程序会优先停止播放、恢复桌面并关闭子窗口，异常情况下也有兜底清理机制。",
       "不会。本地视频不会上传，在线视频仅访问你选择的来源并发起必要请求。"
     ],
-    "#footerLangSelect option": ["English", "简体中文", "繁體中文", "Deutsch", "Français", "日本語", "Português", "Español"]
+    "#footerLangSelect option": ["English", "繁體中文", "Deutsch", "Français", "日本語", "Português", "Español"]
+  }
+};
+
+const coverageDe = {
+  list: {
+    ".featureCard__title": ["Lokales Video per Klick", "Online-Suche und Link-Wiedergabe", "Audiomodi fur jeden Kontext", "Auto-Wechsel und Favoriten", "Kontrollierte Desktop-Sichtbarkeit", "Mehrsprachige UI und Themes"],
+    ".featureCard__text": [
+      "Standardordner scannen, Inhalte automatisch laden und direkt auf den Desktop anwenden.",
+      "Per Stichwort suchen oder Link einfugen und den Stil in Sekunden wechseln.",
+      "Zwischen Stumm, System-Folge und unabhangiger Wiedergabe je nach Situation wechseln.",
+      "Hintergrunde nach Zeitplan rotieren und Favoriten fur schnellen Zugriff speichern.",
+      "Desktop-Ausblendung ist optional und standardmasig aus, bis du sie aktivierst.",
+      "Mehrere Sprachen und Theme-Stile fur unterschiedliche Regionen und Vorlieben."
+    ],
+    ".featureCard__list li": [
+      "Unterstutzt lokale Pfade und file URI",
+      "Retry und Timeout-Fallback bei Fehlern",
+      "Automatische Bereinigung beim Beenden",
+      "Mehrere Qualitatsstufen verfugbar",
+      "Download zur lokalen Wiederverwendung",
+      "Klare Fehlermeldungen fur einfaches Troubleshooting",
+      "Stumm / System-Folge / Unabhangige Wiedergabe",
+      "Vorhersehbares Umschaltverhalten",
+      "Verhindert plotzliche Audio-Unterbrechungen",
+      "30 Minuten / 1 Stunde / 2 Stunden und mehr",
+      "Favoriten per Klick erneut abspielen",
+      "Halt den Desktop dauerhaft frisch",
+      "Sicheres Standardverhalten",
+      "Versucht den Desktop beim Deaktivieren wiederherzustellen",
+      "Beeinflusst statische Wallpaper nicht",
+      "Schnelle Theme-Anpassung",
+      "Mehrsprachige UI fur globale Nutzer",
+      "Flexible Konfiguration fur verschiedene Gewohnheiten"
+    ],
+    ".pill": ["Vereinfachtes Chinesisch", "Traditionelles Chinesisch", "Englisch", "Deutsch", "Franzosisch", "Japanisch"],
+    ".specMini__item span": ["Plattform", "Empfohlener RAM", "Installer-Grose"],
+    ".specMini__item strong": ["Windows", "8GB+", "Leichtgewichtig"],
+    ".specRow__k": ["Inhaltsquellen", "Wiedergabesteuerung", "Erlebnis-Booster", "Datenschutz", "Kompatibilitat"],
+    ".specRow__v": [
+      "Lokale Videoordner, Online-Links und integrierte Online-Suchergebnisse",
+      "Ein-Klick-Anwenden, Retry-Handling, Cleanup beim Beenden und Desktop-Status-Wiederherstellung",
+      "Favoriten, Auto-Wechsel, mehrsprachige UI, Themes und flexible Audiomodi",
+      "Lokale Videos werden nicht hochgeladen. Online-Wiedergabe sendet nur notwendige Anfragen.",
+      "Funktioniert in gangigen Desktop-Umgebungen. Desktop-Ausblendung bleibt optional und nutzerkontrolliert."
+    ]
+  }
+};
+
+const coverageFr = {
+  list: {
+    ".featureCard__title": ["Fond video local en un clic", "Recherche en ligne et lecture par lien", "Modes audio selon le contexte", "Rotation auto et favoris", "Visibilite du bureau controlee", "Interface multilingue et themes"],
+    ".featureCard__text": [
+      "Scannez le dossier video par defaut, chargez automatiquement et appliquez instantanement.",
+      "Recherchez par mot-cle ou collez un lien pour changer de style en quelques secondes.",
+      "Basculez entre muet, suivi systeme et lecture independante selon vos usages.",
+      "Faites tourner les fonds selon un planning et gardez vos selections en favoris.",
+      "Le masquage du bureau est optionnel et desactive par defaut tant que vous ne l'activez pas.",
+      "Plusieurs langues et themes integres pour differents profils d'utilisateurs."
+    ],
+    ".featureCard__list li": [
+      "Prend en charge les chemins locaux et file URI",
+      "Nouvel essai et delai de secours en cas d'echec",
+      "Nettoyage automatique a la fermeture",
+      "Plusieurs niveaux de qualite disponibles",
+      "Telechargement pour reutilisation locale",
+      "Erreurs claires pour un diagnostic rapide",
+      "Muet / Suivi systeme / Lecture independante",
+      "Comportement de bascule previsible",
+      "Evite les interruptions audio accidentelles",
+      "30 min / 1 h / 2 h et plus",
+      "Relecture des favoris en un clic",
+      "Garde votre bureau visuellement frais",
+      "Comportement par defaut securise",
+      "Tente de restaurer le bureau apres desactivation",
+      "N'affecte pas les fonds statiques",
+      "Themes adaptables rapidement",
+      "Interface multilingue pour utilisateurs internationaux",
+      "Configuration flexible selon les habitudes"
+    ],
+    ".pill": ["Chinois simplifie", "Chinois traditionnel", "Anglais", "Allemand", "Francais", "Japonais"],
+    ".specMini__item span": ["Plateforme", "RAM recommandee", "Taille de l'installeur"],
+    ".specMini__item strong": ["Windows", "8GB+", "Leger"],
+    ".specRow__k": ["Sources de contenu", "Controle de lecture", "Boosters d'experience", "Confidentialite", "Compatibilite"],
+    ".specRow__v": [
+      "Dossiers video locaux, liens video en ligne et resultats de recherche integree",
+      "Application en un clic, gestion des retries, nettoyage a la fermeture et restauration de l'etat du bureau",
+      "Favoris, rotation auto, interface multilingue, themes et modes audio flexibles",
+      "Les videos locales ne sont pas envoyees. La lecture en ligne n'envoie que les requetes necessaires.",
+      "Fonctionne avec les environnements bureau courants. Le masquage du bureau reste optionnel."
+    ]
+  }
+};
+
+const coverageJa = {
+  list: {
+    ".featureCard__title": ["ローカル動画をワンクリック適用", "オンライン検索とリンク再生", "シーン別オーディオモード", "自動ローテーションとお気に入り", "デスクトップ表示を細かく制御", "多言語UIとテーマ"],
+    ".featureCard__text": [
+      "既定フォルダをスキャンして素材を自動読み込み、即座にデスクトップへ適用。",
+      "キーワード検索またはリンク貼り付けで、雰囲気を素早く切り替え。",
+      "ミュート、システム連動、独立再生を用途に応じて切り替え可能。",
+      "スケジュールで壁紙を自動切替し、お気に入りをすぐ再利用。",
+      "デスクトップ非表示は任意機能で、初期状態ではオフです。",
+      "複数言語とテーマを内蔵し、地域や好みに合わせて使えます。"
+    ],
+    ".featureCard__list li": [
+      "ローカルパスと file URI をサポート",
+      "失敗時はリトライとタイムアウトで補完",
+      "終了時に自動クリーンアップ",
+      "複数の画質オプションに対応",
+      "ローカル再利用向けにダウンロード可能",
+      "エラー内容が明確で原因特定しやすい",
+      "ミュート / システム連動 / 独立再生",
+      "切替挙動が予測しやすい",
+      "意図しない音声再生を防止",
+      "30分 / 1時間 / 2時間 ほか",
+      "お気に入りをワンクリック再生",
+      "長期利用でも見た目が新鮮",
+      "安全なデフォルト動作",
+      "無効化時にデスクトップ復元を試行",
+      "静止壁紙の利用を妨げない",
+      "テーマ切替が高速",
+      "多言語UIでグローバル対応",
+      "利用習慣に合わせて柔軟設定"
+    ],
+    ".pill": ["簡体中文", "繁體中文", "English", "Deutsch", "Français", "日本語"],
+    ".specMini__item span": ["プラットフォーム", "推奨RAM", "インストーラーサイズ"],
+    ".specMini__item strong": ["Windows", "8GB+", "軽量"],
+    ".specRow__k": ["コンテンツソース", "再生制御", "体験向上機能", "プライバシー", "互換性"],
+    ".specRow__v": [
+      "ローカル動画フォルダ、オンライン動画リンク、内蔵オンライン検索結果",
+      "ワンクリック適用、リトライ処理、終了時クリーンアップ、デスクトップ状態復元",
+      "お気に入り、自動ローテーション、多言語UI、テーマ、柔軟な音声モード",
+      "ローカル動画はアップロードされません。オンライン再生は必要な通信のみ行います。",
+      "一般的なデスクトップ環境で動作。デスクトップ非表示は任意でユーザー管理。"
+    ]
+  }
+};
+
+const coveragePt = {
+  list: {
+    ".featureCard__title": ["Video local com um clique", "Pesquisa online e reproducao por link", "Modos de audio por contexto", "Rotacao automatica e favoritos", "Visibilidade do desktop controlada", "UI multilingue e temas"],
+    ".featureCard__text": [
+      "Analisa a pasta padrao, carrega recursos automaticamente e aplica de imediato ao desktop.",
+      "Pesquise por palavra-chave ou cole um link para mudar o estilo em segundos.",
+      "Alterne entre mudo, seguir sistema e reproducao independente conforme o momento.",
+      "Rode wallpapers por agenda e guarde os melhores em favoritos.",
+      "Ocultar desktop e opcional e vem desligado por defeito.",
+      "Varios idiomas e temas integrados para diferentes preferencias."
+    ],
+    ".featureCard__list li": [
+      "Suporta caminhos locais e file URI",
+      "Retry e fallback por timeout em falhas",
+      "Limpeza automatica ao sair",
+      "Multiplas opcoes de qualidade",
+      "Transferir e guardar para reutilizacao local",
+      "Erros claros para diagnostico rapido",
+      "Mudo / Seguir sistema / Reproducao independente",
+      "Comportamento de troca previsivel",
+      "Evita interrupcoes de audio acidentais",
+      "30 min / 1 hora / 2 horas e mais",
+      "Repetir favoritos com um clique",
+      "Mantem o desktop visualmente fresco",
+      "Comportamento padrao seguro",
+      "Tenta restaurar o desktop ao desativar",
+      "Nao afeta wallpapers estaticos",
+      "Troca de tema rapida",
+      "UI multilingue para utilizadores globais",
+      "Configuracao flexivel para varios habitos"
+    ],
+    ".pill": ["Chines simplificado", "Chines tradicional", "English", "Deutsch", "Français", "Japanese"],
+    ".specMini__item span": ["Plataforma", "RAM recomendada", "Tamanho do instalador"],
+    ".specMini__item strong": ["Windows", "8GB+", "Leve"],
+    ".specRow__k": ["Fontes de conteudo", "Controlo de reproducao", "Melhorias de experiencia", "Privacidade", "Compatibilidade"],
+    ".specRow__v": [
+      "Pastas de video locais, links de video online e resultados de pesquisa integrada",
+      "Aplicacao com um clique, tratamento de retry, limpeza ao sair e recuperacao do estado do desktop",
+      "Favoritos, rotacao automatica, UI multilingue, temas e modos de audio flexiveis",
+      "Videos locais nao sao enviados. A reproducao online faz apenas pedidos necessarios.",
+      "Funciona em ambientes de desktop comuns. Ocultar desktop continua opcional e controlado pelo utilizador."
+    ]
+  }
+};
+
+const coverageEs = {
+  list: {
+    ".featureCard__title": ["Video local en un clic", "Busqueda online y reproduccion por enlace", "Modos de audio por contexto", "Rotacion automatica y favoritos", "Visibilidad del escritorio controlada", "UI multilingue y temas"],
+    ".featureCard__text": [
+      "Escanea la carpeta predeterminada, carga recursos automaticamente y aplica al escritorio al instante.",
+      "Busca por palabra clave o pega un enlace para cambiar el estilo en segundos.",
+      "Cambia entre silencio, seguimiento del sistema y reproduccion independiente segun el escenario.",
+      "Rota wallpapers por horario y guarda tus mejores selecciones en favoritos.",
+      "Ocultar escritorio es opcional y viene desactivado por defecto.",
+      "Incluye varios idiomas y temas para distintas preferencias."
+    ],
+    ".featureCard__list li": [
+      "Soporta rutas locales y file URI",
+      "Reintento y fallback por timeout ante fallos",
+      "Limpieza automatica al salir",
+      "Varias opciones de calidad",
+      "Descarga y guarda para reutilizacion local",
+      "Errores claros para diagnostico rapido",
+      "Silencio / Seguir sistema / Reproduccion independiente",
+      "Comportamiento de cambio predecible",
+      "Evita interrupciones de audio accidentales",
+      "30 min / 1 hora / 2 horas y mas",
+      "Reproducir favoritos con un clic",
+      "Mantiene el escritorio siempre fresco",
+      "Comportamiento predeterminado seguro",
+      "Intenta restaurar el escritorio al desactivar",
+      "No afecta el uso de wallpapers estaticos",
+      "Cambio de tema rapido",
+      "UI multilingue para usuarios globales",
+      "Configuracion flexible para diferentes habitos"
+    ],
+    ".pill": ["Chino simplificado", "Chino tradicional", "English", "Deutsch", "Français", "Japanese"],
+    ".specMini__item span": ["Plataforma", "RAM recomendada", "Tamano del instalador"],
+    ".specMini__item strong": ["Windows", "8GB+", "Ligero"],
+    ".specRow__k": ["Fuentes de contenido", "Control de reproduccion", "Mejoras de experiencia", "Privacidad", "Compatibilidad"],
+    ".specRow__v": [
+      "Carpetas de video locales, enlaces de video online y resultados de busqueda integrados",
+      "Aplicacion en un clic, manejo de reintentos, limpieza al salir y recuperacion del estado del escritorio",
+      "Favoritos, rotacion automatica, UI multilingue, temas y modos de audio flexibles",
+      "Los videos locales no se suben. La reproduccion online solo envia solicitudes necesarias.",
+      "Funciona en entornos de escritorio comunes. Ocultar escritorio sigue siendo opcional y controlado por el usuario."
+    ]
   }
 };
 
@@ -814,6 +1038,11 @@ Object.keys(pageI18n).forEach((lang) => {
 
 pageI18n["zh-TW"] = mergeLang(pageI18n["zh-TW"], coverageZhTW);
 pageI18n["zh-CN"] = mergeLang(pageI18n["zh-TW"], coverageZhCN);
+pageI18n["de-DE"] = mergeLang(pageI18n["de-DE"], coverageDe);
+pageI18n["fr-FR"] = mergeLang(pageI18n["fr-FR"], coverageFr);
+pageI18n["ja-JP"] = mergeLang(pageI18n["ja-JP"], coverageJa);
+pageI18n["pt-PT"] = mergeLang(pageI18n["pt-PT"], coveragePt);
+pageI18n["es-ES"] = mergeLang(pageI18n["es-ES"], coverageEs);
 
 function getStoredLang() {
   try {
@@ -831,10 +1060,11 @@ function storeLang(lang) {
 
 function normalizeLang(lang) {
   if (!lang) return "en-US";
-  if (pageI18n[lang]) return lang;
   const lower = String(lang).toLowerCase();
+  if (lower === "zh-cn" || lower.startsWith("zh-sg")) return "zh-TW";
   if (lower === "zh-tw" || lower.startsWith("zh-hk") || lower.startsWith("zh-mo")) return "zh-TW";
-  if (lower.startsWith("zh")) return "zh-CN";
+  if (pageI18n[lang]) return lang;
+  if (lower.startsWith("zh")) return "zh-TW";
   return "en-US";
 }
 
