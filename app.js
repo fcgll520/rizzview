@@ -32,8 +32,8 @@ const pageI18n = {
       '.callout__title': "System Notes",
       '.callout__text':
         "Runs on Windows 10/11 with either integrated or dedicated graphics. For large video assets, SSD storage is recommended for smoother loading.",
-      '.section.section--alt .section__title': "Product Overview",
-      '.section.section--alt .section__desc':
+      '#overview .section__title': "Product Overview",
+      '#overview .section__desc':
         "Structured details to quickly evaluate whether RizzView fits your workflow and device setup.",
       '#faq .section__title': "Frequently Asked Questions",
       '#faq .section__desc': "Answers to the most common install and usage questions.",
@@ -114,8 +114,8 @@ const pageI18n = {
       '#how .section__desc': "安裝後幾分鐘即可完成設定，幾乎零學習成本。",
       '.callout__title': "系統建議",
       '.callout__text': "支援 Windows 10/11，核顯與獨顯皆可。若影片較大，建議放在 SSD 以提升讀取穩定性。",
-      '.section.section--alt .section__title': "產品特性總覽",
-      '.section.section--alt .section__desc': "用結構化資訊快速判斷 RizzView 是否符合你的使用習慣。",
+      '#overview .section__title': "產品特性總覽",
+      '#overview .section__desc': "用結構化資訊快速判斷 RizzView 是否符合你的使用習慣。",
       '#faq .section__title': "常見問題",
       '#faq .section__desc': "安裝與使用過程中最常見問題一次看懂。",
       '.ctaSection__title': "準備好升級你的桌面體驗了嗎？",
@@ -185,8 +185,8 @@ const pageI18n = {
       ".callout__title": "Systemhinweise",
       ".callout__text":
         "Lauft auf Windows 10/11 mit integrierter oder dedizierter GPU. Fur grose Videos wird SSD-Speicher empfohlen.",
-      ".section.section--alt .section__title": "Produktuberblick",
-      ".section.section--alt .section__desc":
+      "#overview .section__title": "Produktuberblick",
+      "#overview .section__desc":
         "Strukturierte Infos, um schnell zu entscheiden, ob RizzView zu deinem Workflow passt.",
       '#faq .section__title': "Haufige Fragen",
       '#faq .section__desc': "Antworten auf die wichtigsten Fragen zu Installation und Nutzung.",
@@ -265,8 +265,8 @@ const pageI18n = {
       ".callout__title": "Notes systeme",
       ".callout__text":
         "Fonctionne sur Windows 10/11 avec iGPU ou GPU dedie. Pour les gros fichiers video, un SSD est recommande.",
-      ".section.section--alt .section__title": "Vue d'ensemble du produit",
-      ".section.section--alt .section__desc":
+      "#overview .section__title": "Vue d'ensemble du produit",
+      "#overview .section__desc":
         "Informations structurees pour verifier rapidement l'adaptation a votre workflow.",
       '#faq .section__title': "Questions frequentes",
       '#faq .section__desc': "Reponses aux questions les plus courantes sur l'installation et l'usage.",
@@ -345,8 +345,8 @@ const pageI18n = {
       ".callout__title": "システムメモ",
       ".callout__text":
         "Windows 10/11で動作。内蔵GPU/外部GPUの両方に対応。大きな動画ファイルはSSD保存を推奨。",
-      ".section.section--alt .section__title": "製品概要",
-      ".section.section--alt .section__desc":
+      "#overview .section__title": "製品概要",
+      "#overview .section__desc":
         "ワークフロー適合性を素早く判断できるよう、情報を構造化して表示。",
       '#faq .section__title': "よくある質問",
       '#faq .section__desc': "インストールや利用時によくある質問に回答します。",
@@ -426,8 +426,8 @@ const pageI18n = {
       ".callout__title": "Notas do sistema",
       ".callout__text":
         "Funciona no Windows 10/11 com iGPU ou GPU dedicada. Para videos grandes, recomenda-se armazenamento SSD.",
-      ".section.section--alt .section__title": "Visao geral do produto",
-      ".section.section--alt .section__desc":
+      "#overview .section__title": "Visao geral do produto",
+      "#overview .section__desc":
         "Informacao estruturada para avaliar rapidamente se o RizzView se adapta ao seu fluxo.",
       '#faq .section__title': "Perguntas frequentes",
       '#faq .section__desc': "Respostas para as duvidas mais comuns de instalacao e uso.",
@@ -507,8 +507,8 @@ const pageI18n = {
       ".callout__title": "Notas del sistema",
       ".callout__text":
         "Funciona en Windows 10/11 con iGPU o GPU dedicada. Para videos grandes se recomienda almacenamiento SSD.",
-      ".section.section--alt .section__title": "Resumen del producto",
-      ".section.section--alt .section__desc":
+      "#overview .section__title": "Resumen del producto",
+      "#overview .section__desc":
         "Informacion estructurada para evaluar rapidamente si RizzView encaja en tu flujo de trabajo.",
       '#faq .section__title': "Preguntas frecuentes",
       '#faq .section__desc': "Respuestas a las dudas mas comunes de instalacion y uso.",
@@ -559,6 +559,262 @@ const pageI18n = {
   }
 };
 
+const coverageBase = {
+  one: {
+    '.nav__link[href="https://www.phoenysoft.com/contact.html"]': "Contact Us",
+    ".ctaSection__kicker": "RizzView for Windows",
+    '.footer__link[href="https://www.phoenysoft.com"]': "Home",
+    '.footer__link[href="https://www.phoenysoft.com/about.html"]': "About Us",
+    '.footer__link[href="https://www.phoenysoft.com/privacy.html"]': "Privacy",
+    '.footer__link[href="https://www.phoenysoft.com/terms.html"]': "Terms",
+    ".footer__right .srOnly": "Language"
+  },
+  list: {
+    ".featureCard__title": [
+      "One-click local video wallpaper",
+      "Online search and link playback",
+      "Audio modes for each context",
+      "Auto rotation and favorites",
+      "Controlled desktop visibility",
+      "Multilingual UI and themes"
+    ],
+    ".featureCard__text": [
+      "Scan your default video folder, auto-load resources, and apply any item to your desktop instantly.",
+      "Find content by keyword or paste direct links, then apply it to your desktop workflow in seconds.",
+      "Switch between mute, system-following, or independent playback to match work, study, or entertainment.",
+      "Rotate wallpapers on schedule and keep your best picks in favorites for quick replay anytime.",
+      "Desktop hiding is optional and off by default. It only activates while playing if you explicitly enable it.",
+      "Built-in language options and theme styles for different regions and user preferences."
+    ],
+    ".featureCard__list li": [
+      "Supports local paths and file URIs",
+      "Retry and timeout fallback for failed files",
+      "Automatic cleanup on exit",
+      "Multiple quality options",
+      "Download and save for local reuse",
+      "Clear errors for easier troubleshooting",
+      "Mute / Follow system / Independent playback",
+      "Predictable switching behavior",
+      "Prevents accidental audio interruptions",
+      "30 min / 1 hour / 2 hours and more",
+      "Favorite content one-click replay",
+      "Keeps your desktop feeling fresh",
+      "Safe default behavior",
+      "Attempts desktop restore when disabled",
+      "Does not affect static wallpaper usage",
+      "Built-in themes for fast adaptation",
+      "Multi-language UI for global users",
+      "Flexible setup for different habits"
+    ],
+    ".pill": ["Simplified Chinese", "Traditional Chinese", "English", "Deutsch", "Francais", "Japanese"],
+    ".specMini__item span": ["Platform", "Recommended RAM", "Installer Size"],
+    ".specMini__item strong": ["Windows", "8GB+", "Lightweight"],
+    ".specRow__k": ["Content Sources", "Playback Control", "Experience Boosters", "Privacy Behavior", "Compatibility"],
+    ".specRow__v": [
+      "Local video folders, online video links, and built-in online search results",
+      "One-click apply, retry handling, cleanup on exit, and desktop state recovery",
+      "Favorites, auto rotation, multilingual UI, themes, and flexible audio modes",
+      "Local videos are not uploaded. Online playback only sends required network requests.",
+      "Works with common desktop environments. Hide-desktop remains optional and user-controlled."
+    ],
+    "#footerLangSelect option": [
+      "English",
+      "Simplified Chinese",
+      "Traditional Chinese",
+      "Deutsch",
+      "Francais",
+      "Japanese",
+      "Portugues",
+      "Espanol"
+    ]
+  }
+};
+
+const coverageZhTW = {
+  one: {
+    '.nav__link[href="https://www.phoenysoft.com/contact.html"]': "聯絡我們",
+    ".ctaSection__kicker": "RizzView for Windows",
+    '.footer__link[href="https://www.phoenysoft.com"]': "首頁",
+    '.footer__link[href="https://www.phoenysoft.com/about.html"]': "關於我們",
+    '.footer__link[href="https://www.phoenysoft.com/privacy.html"]': "隱私政策",
+    '.footer__link[href="https://www.phoenysoft.com/terms.html"]': "條款",
+    ".footer__right .srOnly": "語言"
+  },
+  list: {
+    ".featureCard__title": ["本機影片一鍵套用", "線上搜尋與連結播放", "多場景音訊模式", "自動輪播與收藏", "桌面顯示可控", "多語言與主題"],
+    ".featureCard__text": [
+      "掃描預設影片目錄，自動載入資源並快速套用到桌面。",
+      "支援關鍵字搜尋與貼上連結，快速切換桌面風格。",
+      "可在靜音、跟隨系統與獨立播放間切換，貼合不同情境。",
+      "可依排程輪播並收藏常用內容，快速回到喜愛風格。",
+      "隱藏桌面為可選功能，預設關閉，僅在你開啟時生效。",
+      "內建多語言與主題樣式，適配不同地區與習慣。"
+    ],
+    ".featureCard__list li": [
+      "支援本機路徑與 file URI",
+      "失敗可重試與逾時兜底",
+      "退出時自動清理",
+      "支援多種清晰度來源",
+      "可下載保存到本機",
+      "錯誤提示清楚，便於排查",
+      "靜音 / 跟隨系統 / 獨立播放",
+      "切換邏輯清晰",
+      "避免誤觸突然出聲",
+      "30 分鐘 / 1 小時 / 2 小時等",
+      "收藏內容一鍵重播",
+      "長期使用更不易審美疲勞",
+      "預設行為安全穩定",
+      "關閉後可嘗試恢復桌面",
+      "不影響靜態壁紙使用",
+      "主題切換快速",
+      "多語言介面覆蓋常用語系",
+      "設定彈性高"
+    ],
+    ".pill": ["簡體中文", "繁體中文", "English", "Deutsch", "Français", "日本語"],
+    ".specMini__item span": ["平台", "建議記憶體", "安裝體積"],
+    ".specMini__item strong": ["Windows", "8GB+", "輕量級"],
+    ".specRow__k": ["資源來源", "播放控制", "體驗增強", "隱私策略", "相容性"],
+    ".specRow__v": [
+      "本機影片資料夾、線上影片連結與內建線上搜尋結果",
+      "一鍵套用、失敗重試、退出清理與桌面狀態恢復",
+      "收藏、自動輪播、多語言介面、主題與彈性音訊模式",
+      "本機影片不會上傳，線上播放僅發送必要請求",
+      "適配常見桌面環境，隱藏桌面由使用者自行控制"
+    ],
+    "#footerLangSelect option": ["English", "簡體中文", "繁體中文", "Deutsch", "Français", "日本語", "Português", "Español"]
+  }
+};
+
+const coverageZhCN = {
+  htmlLang: "zh-CN",
+  title: "RizzView | Windows 视频动态壁纸",
+  metaDescription: "将本地或在线视频设为动态壁纸。支持多语言、音频模式、自动轮播与收藏。",
+  one: {
+    '.brand__tag': "视频动态壁纸",
+    '.nav__link[href="#features"]': "功能亮点",
+    '.nav__link[href="#scenes"]': "使用场景",
+    '.nav__link[href="#how"]': "快速上手",
+    '.nav__link[href="#faq"]': "常见问题",
+    '.nav__link[href="https://www.phoenysoft.com/contact.html"]': "联系我们",
+    ".topbar__actions .button": "免费下载",
+    ".kicker": "Windows 10/11 · 本地与在线视频 · 稳定低占用",
+    ".hero__title": "让桌面不止静态图片<br />每一次点亮都更有氛围",
+    ".hero__subtitle": "RizzView 是一款面向日常使用的 Windows 视频桌面工具。可一键设置本地或在线视频，并按需调整轮播、收藏、音频策略和语言。",
+    '.hero__cta .button--primary': "下载 Windows 版",
+    '.hero__cta .button--ghost': "查看亮点",
+    ".trustBar__title": "为什么用户喜欢 RizzView",
+    '#features .section__title': "核心功能",
+    '#features .section__desc': "从素材获取到播放控制，围绕好看、好用和稳定构建完整体验。",
+    '#scenes .section__title': "典型使用场景",
+    '#scenes .section__desc': "不只是美观，而是让桌面在不同状态下都更贴合你的节奏。",
+    '#how .section__title': "3 步快速上手",
+    '#how .section__desc': "安装后几分钟即可完成配置，学习成本很低。",
+    ".callout__title": "系统建议",
+    ".callout__text": "支持 Windows 10/11，核显和独显均可使用。若素材较大，建议使用 SSD 存储。",
+    "#overview .section__title": "产品特性一览",
+    "#overview .section__desc": "用结构化信息快速判断 RizzView 是否符合你的使用习惯。",
+    '#faq .section__title': "常见问题",
+    '#faq .section__desc': "覆盖安装与使用过程中最常见的问题。",
+    ".ctaSection__kicker": "RizzView for Windows",
+    ".ctaSection__title": "准备好升级你的桌面体验了吗？",
+    ".ctaSection__text": "现在安装，几分钟内完成设置，用动态视频打造更有沉浸感的个人桌面空间。",
+    '.ctaSection__actions .button--primary': "立即下载",
+    '.ctaSection__actions .button--ghost': "商务合作",
+    '.footer__meta': "Windows 视频动态壁纸",
+    '.footer__link[href="https://www.phoenysoft.com"]': "首页",
+    '.footer__link[href="https://www.phoenysoft.com/about.html"]': "关于我们",
+    '.footer__link[href="https://www.phoenysoft.com/privacy.html"]': "隐私政策",
+    '.footer__link[href="https://www.phoenysoft.com/terms.html"]': "服务条款",
+    '.footer__link[href="#features"]': "功能",
+    '.footer__link[href*="rizzview_setup.exe"]': "下载",
+    ".footer__right .srOnly": "语言"
+  },
+  list: {
+    ".statPill__k": ["支持格式", "隐藏桌面", "上手门槛"],
+    ".statPill__v": ["MP4 / AVI / WMV / MKV", "默认关闭，按需开启", "3 步完成"],
+    ".trustItem": ["快速配置", "播放稳定", "视觉高级", "功能完整", "持续更新"],
+    ".floatCard__title": ["自动轮播", "在线搜索"],
+    ".floatCard__desc": ["30 分钟到 1 天自由设置，桌面风格自动切换。", "粘贴 URL 或直接检索，快速找到目标素材。"],
+    ".featureCard__title": ["本地视频一键设为壁纸", "在线搜索与链接播放", "音频模式按场景切换", "自动轮播与收藏", "桌面显示可控", "多语言与主题系统"],
+    ".featureCard__text": [
+      "扫描默认视频目录，自动读取资源列表，点击即可应用到桌面。",
+      "支持关键词搜索与直接粘贴链接，快速切换桌面氛围。",
+      "可在静音、跟随系统和独立播放之间切换，适配不同场景。",
+      "支持定时轮换壁纸，并通过收藏快速回到常用内容。",
+      "隐藏桌面是可选项，默认不生效，手动开启时才会应用。",
+      "内置多语言与主题样式，适配不同地区与使用偏好。"
+    ],
+    ".featureCard__list li": [
+      "支持本地路径与 file URI",
+      "失败自动重试与超时兜底",
+      "退出自动清理资源",
+      "可选多清晰度来源",
+      "支持下载到本地",
+      "错误提示清晰便于排查",
+      "静音 / 跟随系统 / 独立播放",
+      "切换逻辑清晰可控",
+      "避免误触突然出声",
+      "支持 30 分钟 / 1 小时 / 2 小时等",
+      "收藏内容一键重播",
+      "长期使用不易审美疲劳",
+      "默认行为安全稳定",
+      "关闭后尝试恢复桌面",
+      "不影响静态壁纸使用",
+      "主题切换快速自然",
+      "多语言界面覆盖常用语种",
+      "配置灵活，适配不同习惯"
+    ],
+    ".pill": ["简体中文", "繁體中文", "English", "Deutsch", "Français", "日本語"],
+    ".sceneCard__tag": ["办公桌面", "创作模式", "娱乐空间"],
+    ".sceneCard__title": ["安静动态背景，提升专注感", "氛围化视觉，激发灵感", "更具展示感的沉浸桌面"],
+    ".sceneCard__text": [
+      "搭配低干扰视频和静音模式，在不打断注意力的前提下提升桌面质感。",
+      "快速切换收藏与轮播列表，让桌面更贴近创作节奏。",
+      "一键应用在线资源，打造更有个性的设备展示风格。"
+    ],
+    ".step__title": ["导入本地或在线视频", "点击设置桌面", "按需调整规则"],
+    ".step__text": [
+      "选择本地目录或粘贴视频链接，系统会自动识别并加载可用资源。",
+      "一键开始播放，播放器与桌面层级会在后台初始化。",
+      "调整轮播间隔、音频行为与桌面显示策略，并保存常用组合。"
+    ],
+    ".specMini__item span": ["平台", "推荐内存", "安装体积"],
+    ".specMini__item strong": ["Windows", "8GB+", "轻量级"],
+    ".specRow__k": ["资源来源", "播放控制", "体验增强", "隐私策略", "适配性"],
+    ".specRow__v": [
+      "本地视频目录、在线视频链接与内建在线搜索结果",
+      "一键应用、失败重试、退出清理与桌面状态恢复",
+      "收藏、自动轮播、多语言界面、主题与音频模式",
+      "本地视频不会上传，在线播放仅发起必要请求",
+      "兼容常见桌面环境，隐藏桌面保持可选并由用户控制"
+    ],
+    ".faq__q": ["隐藏桌面默认会生效吗？", "本地视频为什么提示找不到？", "退出后仍有残留窗口怎么办？", "会上传我的本地文件吗？"],
+    ".faq__a": [
+      "不会。该选项默认关闭，只有你手动开启后才会生效。",
+      "请确认路径存在且可访问。若使用 file:/// 路径，程序也会自动转换并校验。",
+      "程序会优先停止播放、恢复桌面并关闭子窗口，异常情况下也有兜底清理机制。",
+      "不会。本地视频不会上传，在线视频仅访问你选择的来源并发起必要请求。"
+    ],
+    "#footerLangSelect option": ["English", "简体中文", "繁體中文", "Deutsch", "Français", "日本語", "Português", "Español"]
+  }
+};
+
+function mergeLang(base, extra) {
+  return {
+    ...base,
+    ...extra,
+    one: { ...(base.one || {}), ...(extra.one || {}) },
+    list: { ...(base.list || {}), ...(extra.list || {}) }
+  };
+}
+
+Object.keys(pageI18n).forEach((lang) => {
+  pageI18n[lang] = mergeLang(coverageBase, pageI18n[lang]);
+});
+
+pageI18n["zh-TW"] = mergeLang(pageI18n["zh-TW"], coverageZhTW);
+pageI18n["zh-CN"] = mergeLang(pageI18n["zh-TW"], coverageZhCN);
+
 function getStoredLang() {
   try {
     return localStorage.getItem(langStorageKey);
@@ -577,7 +833,8 @@ function normalizeLang(lang) {
   if (!lang) return "en-US";
   if (pageI18n[lang]) return lang;
   const lower = String(lang).toLowerCase();
-  if (lower.startsWith("zh")) return "zh-TW";
+  if (lower === "zh-tw" || lower.startsWith("zh-hk") || lower.startsWith("zh-mo")) return "zh-TW";
+  if (lower.startsWith("zh")) return "zh-CN";
   return "en-US";
 }
 
@@ -649,3 +906,4 @@ function wireAccordionSingleOpen() {
 wireLanguageSelect();
 applyLanguage(getStoredLang() || "en-US");
 wireAccordionSingleOpen();
+
